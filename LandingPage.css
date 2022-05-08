@@ -1,0 +1,270 @@
+html{
+    height: 100%;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #eee;
+    font-size: 1.2rem;
+    color: black;
+    font-family: "lato",sans-serif;
+    margin: 0;
+}
+#email,#button{
+    margin: 8px 0 ;
+}
+.nav-link{
+    text-decoration: none;
+    color:black;
+}
+#header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   /* margin: 25px;*/
+    position: fixed;
+    background-color: #eee;
+    height: 35px;
+    width: 100%;
+    padding: 25px;
+}
+#header-img{
+    max-width: 25%;
+    height: 35px;
+}
+#nav-bar{
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+#form-section{
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 110px;
+}
+#main-content{
+    max-width: 60%;
+    margin: 0 auto;
+}
+#email{
+    width: 250px;
+    height: 25px;
+}
+#button{
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    margin: 10px;
+}
+.submit{
+    height: 30px;
+    width: 70%;
+    background-color: #f1c40f;
+    font-size: large;
+    font-weight: 800;
+    border: none;
+
+}
+.submit:hover{
+    background-color: orange;
+    cursor: pointer;
+}
+h2{
+    font-size: 1.3em;
+}
+.icon
+{
+    color: darkorange;
+}
+.main-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.group-description{
+    margin: 30px;
+    
+}
+.group-description>p{
+    font-size: medium;
+}
+
+.icon{
+    width: 80px;
+}
+#video{
+    width: 100%;
+    height: 100%;
+}
+#video-section{
+    width: 35%;
+    height: 300px;
+    margin: 10px auto;
+}
+footer{
+    background-color: #ddd;
+    margin: 0 auto;
+    max-width: 70%;
+    padding: 10px;
+    display: flex;
+    height: 60px ;
+    flex-direction: column;
+    align-items: end;
+}
+#flex-footer{
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: medium;
+}
+#cpyright{
+    color: #444;
+    font-size: 0.8rem;
+}
+
+#cards-container{
+    width: 70%;
+    margin:  65px auto 25px auto;
+    display: flex;
+    justify-content: space-around;
+
+}
+.card{
+    width: 30%;
+    height: 320px;
+    border: 1px solid black;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.card-title{
+    background-color: #ddd;
+    height: 55px;
+    box-sizing: border-box;
+    padding: 20px;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+
+li{
+    list-style: none;
+    padding: 4px 0 ;
+    margin: 0;
+    font-size: medium;
+}   
+.card-price{
+    padding: 20px;
+}
+.card-btn{
+    margin: 20px 0;
+    font-weight: 400;
+    width: 100px;
+    height: 40px;
+    padding: 0 10px;
+    border-radius: 2px;
+
+}
+
+@media(max-width:650px){
+    
+    #header{
+        flex-direction: column;
+        align-items: center;
+        height: 120px;
+        padding: 10px;
+    }
+    #nav-bar{
+        flex-direction: column;
+        text-align: center;
+        margin: 10px 0;
+
+    }
+    #header-img{
+        max-width: 100%;
+    }
+    #form-section{
+        padding: 160px 0 0 0;
+        /*
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 110px;
+        */
+    }
+    #form-title{
+        width: 100%;
+        text-align: center;
+        font-size: large;
+    }
+    #main-content{
+        max-width: 100%;
+        margin: 0;
+    }
+    .main-section{
+        display: block;
+    }
+    .section-head{
+        width: 100%;
+        text-align: center;
+        font-size: 1.6rem;
+    }
+    .nav-link{
+        padding: 2px 0;
+    }
+    .icon{
+        visibility: hidden;
+    }
+    .group-description{
+        display: block;
+        width: 100%;
+        margin: 30px 0;
+    }
+    .group-description>p{
+        text-align: center;
+        margin: 8px 0;
+        width: 100%;
+    }
+    #video-section{
+        margin-top: 50px;
+        width: 100%;
+    }
+    #cards-container{
+        width: 100%;
+        margin:  65px auto 25px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+    }
+
+    .card{
+        width: 60%;
+        height: 320px;
+        margin-bottom: 10px;
+
+    }
+    
+    footer{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        max-width: 100%;
+    }
+    #flex-footer{
+        width: 50%;
+        box-sizing: border-box;
+        margin-bottom: 5px;
+    }
+    #cpyright{
+        margin-right: 20px;
+        font-size: 15px;
+    }
+}
